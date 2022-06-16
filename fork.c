@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 		exit(1);
 	} else if (rc == 0) {
 //		Child new process
-		printf("hello, I am child (pid:%d(\n", (int) getpid());
+		printf("hello, I am child (pid:%d)\n", (int) getpid());
 	} else {
 //		parent gose down this parth (main) 
 		printf("hello, I am parent of %d (pid:%d)\n", rc, (int) getpid());
